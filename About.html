@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VoD - Selección de perfiles ABR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">VoD: Pruebas ABR</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="About.html">Sobre los perfiles</a>
+                    </li>
+                    <li>
+                        <a href="summary.html">Índice</a>
+                    </li>
+                    <li>
+                        <a href="page2.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contenidos</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">On Demand:
+                    <small>  Sobre los perfiles</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div>
+                <br><br>  Los perfiles se seleccionan según disponibilidad de BW por caso de uso. Uno para mobile (smartphones y tablets) y otro que apunta a aplicaciones wifi en smart TVs y laptops. <br><br>
+
+                Criterios de Selección: <br><br>
+                <small>
+                    <ul>
+                        <li>
+                            <strong>Foco:</strong> Ancho de banda disponible de 3Mbps y resoluciones de calidad visual alta de 1280x720.<br><br>
+                        </li> 
+                        <li>
+                            <strong>Performance:</strong> se realizan pruebas con diferente contenido para evaluar la performance de cada profile. Optimización de calidad visual según bitrate (Bitrate constante y Resolución variable), Optimización según resolución (Resolución fija y Bitrate variable), Compatibilidad de dispositivos (H264 Baseline vs Main vs High). <br><br>
+                        </li>
+                        <li>
+                            <strong>Dispositivos target:</strong> smartphones y tablets de gama media-alta de antiguedad menor a 5 años (2011 Android 4, H264 draft 2003, hls release 2009). - Conforme ocurra el reemplazo de dispositivos se recomienda migrar a perfiles High.<br><br>
+                        </li>
+                        <li>
+                            <strong>Tiempos de carga: </strong>se mantienen bajos con el profile de 600Kbps.<br><br>
+                        </li>
+                        <li>
+                            <strong>[Recomendado] Continuidad durante extrangulamiento de BW: </strong>profile de audio encodeado al mismo bitrate que el profile más bajo (evita "audio-popping"). <br><br>
+                        </li>
+                        <li>
+                            <strong>Consumo promedio esperado:</strong> 2.5Mbps en mobile y 3Mbps en Notebooks / Desktops.<br><br>
+                        </li>
+                        <li>
+                            <strong>HQ:</strong> Los profiles a bitrate de 4.5Mbps (mobile) y 7Mbps (smart TV) buscan permitir una base de comparación para el contenido encodeado a diferentes bitrates. Responden a la pregunta: Cómo se vería si el bitrate fuera más alto?. Permite evaluar la relación de compromiso entre calidad vs costo (ancho de banda, storage, tráfico, etc).<br><br>
+                        </li>
+                        <li>
+                            <strong>Premium Q:</strong> El perfil de 9Mbps se agrega para poder comparar la diferencia entre los contenidos encodeados con este y los de más bajo bitrate. Así, se busca poder evaluar si el las aberraciones visibles fueron introducidas por el encodeo y podrían mejorarse incrementando el birate. El profile de 9Mbps puede utilizarse en servicios premium ya que se evaluó sensación de inmersión a 1080p con performance aceptable en términos de rango dinámico, texturas complejas y partículas en movimiento. <br><br> 
+                        </li>
+                        <li>
+                            <strong>Player HLS:</strong> Introduce lag notable por exceso de carga en el procesador (Browser más popular: Chrome, Widows). Se deberá optimizar el player o buscar alternativas. <strong>github:</strong> <a href="https://github.com/bjarnoldus/momovi-video-hls">Momovi</a><br><br> 
+                        </li>
+                    </ul>
+
+                    <br><br><br>
+                </small>
+            </div>  
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li>
+                        <a href="index.html">1</a>
+                    </li>
+                    <li >
+                        <a href="page2.html">2</a>
+                    </li>
+<!--                       <li >
+                        <a href="#">3</a>
+                    </li>
+                  <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li> -->
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Your Website 2014</p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>

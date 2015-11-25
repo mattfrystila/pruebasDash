@@ -1,0 +1,683 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>VoD - Selección de perfiles ABR</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="css/2-col-portfolio.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">VoD: Pruebas ABR</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="About.html">Sobre los perfiles</a>
+                    </li>
+                    <li>
+                        <a href="summary.html">Índice</a>
+                    </li>
+                    <li>
+                        <a href="page2.html">Test</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contenidos</a>
+                    </li>
+                    <li>
+                        <a href="dash.html">Test Dashjs</a>
+                    </li>                    
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Page Header -->
+        <div class="row">
+            <div class="col-lg-12">
+                <h1 class="page-header">On Demand:
+                    <small> Contenidos para pruebas de performance</small>
+                </h1>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row col-lg-12">
+            <div> 
+                <h3>
+                    <small>
+                    - <strong>Archivo base referencia</strong> 1080@9Mbps:
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_9000.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_9000.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_9000.m3u8">Taipei</a><br>
+                    </small>
+                </hs>
+                <br><br>
+                <h4>Pruebas Anevia HSS -> HLS: <br>
+                    <ul>
+                        <li><small>Gravity:
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity.m3u8"> ABR </a> 
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=198000.m3u8"> 200 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=298000.m3u8"> 300 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=595000.m3u8"> 600 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=795000.m3u8"> 800 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=993000.m3u8"> 1000 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=1192000.m3u8"> 1.2Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=1688000.m3u8"> 1.7Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=2483000.m3u8"> 2.5Mbps </a>     
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=3973000.m3u8"> 4Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/Gravity/_/SA_VoD/Gravity-video=6952000.m3u8"> 7Mbps</a>
+                         </small>
+                        </li>
+                        <li><small>TaipeiMP4: 
+                              <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei.m3u8"> ABR video + audio </a> 
+                              video
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=224000.m3u8"> 200 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=296000.m3u8"> 300 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=595000.m3u8"> 600 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=791000.m3u8"> 800 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=989000.m3u8"> 1000 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=1188000.m3u8"> 1.2Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=1683000.m3u8"> 1.7Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=2475000.m3u8"> 2.5Mbps </a>     
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=3961000.m3u8"> 4Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/300-video=6933000.m3u8"> 7Mbps</a>
+                            
+                            audio
+                             <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng=18000.m3u8"> audio-18 </a> 
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng=62629.m3u8"> audio-62 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng_1=63942.m3u8"> audio-63 </a>
+                         </small>
+                        </li>
+                        <li><small>TaipeiISMV: 
+                              <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipeiISMV/_/SA_VoD/taipeiISMV.m3u8"> ABR video + audio </a> 
+                              video
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=224000.m3u8"> 200 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=296000.m3u8"> 300 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=595000.m3u8"> 600 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=791000.m3u8"> 800 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=989000.m3u8"> 1000 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=1188000.m3u8"> 1.2Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=1683000.m3u8"> 1.7Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=2475000.m3u8"> 2.5Mbps </a>     
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-video_eng=3961000.m3u8"> 4Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/300-video=6933000.m3u8"> 7Mbps</a>
+                            
+                            audio
+                             <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng=18000.m3u8"> audio-18 </a> 
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng=62629.m3u8"> audio-62 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/taipei/_/SA_VoD/taipei-audio_eng_1=63942.m3u8"> audio-63 </a>
+                         </small>
+                        </li>                        
+                        <li><small>300:
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300.m3u8"> ABR </a> 
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=199000.m3u8"> 200 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=298000.m3u8"> 300 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=596000.m3u8"> 600 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=795000.m3u8"> 800 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=993000.m3u8"> 1000 </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=1192000.m3u8"> 1.2Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=1689000.m3u8"> 1.7Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=2484000.m3u8"> 2.5Mbps </a>     
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=3974000.m3u8"> 4Mbps </a>
+                             /<a href="http://cdn.lab.cvattv.com.ar/vod/HD/VODTEST/300/_/SA_VoD/300-video=6954000.m3u8"> 7Mbps</a>
+                         </small>
+                        </li>
+                        <li><small>Contenido:
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000790995/_/SA_VoD/000790995.m3u8"> XMen </a> 
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000782042/_/SA_VoD/000782042.m3u8"> Avatar </a> 
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000905250/_/SA_VoD/000905250.m3u8"> Transformers </a> 
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000936984/_/SA_VoD/000936984.m3u8"> Toy Story </a> 
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000836973/_/SA_VoD/000836973.m3u8"> Furious 7 </a> 
+                            <a href="http://cdn.lab.cvattv.com.ar/vod/HD/FVoD/000781896/_/SA_VoD/000781896.m3u8"> Ice Age </a> 
+                            </small>
+                        </li>
+
+
+                    </ul>
+                </h4>
+                     <br>
+                     <br>
+                <br>
+                <h3>No Watermark
+                    <small> Relatos Salvajes: 
+                    
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_CVA_HLS_VuviquityNoW.m3u8">ABR</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_m1280x720H_7000.m3u8">7Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_m1280x720H_4500_64HEv1.m3u8">4.5Mbps </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_m960x540H_2200_64HEv1.m3u8">2.2Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_m854x480M_1200_64HEv1.m3u8">1.2Mbps</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Relatos_Salvajes_HD_CL_H264_Dd_m640x360M_600_64HEv1.m3u8">600Kbps</a>  
+                        <br>
+                    </small>
+                    <small> Furious 7: 
+                    
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_CVA_HLS_VuviquityNoW.m3u8">ABR</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_m1280x720H_7000.m3u8">7Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_m1280x720H_4500_64HEv1.m3u8">4.5Mbps </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_m960x540H_2200_64HEv1.m3u8">2.2Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_m854x480M_1200_64HEv1.m3u8">1.2Mbps</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/ODG_Furious_7_HD_CL_H264_BrndIn_m640x360M_600_64HEv1.m3u8">600Kbps</a>  
+                        <br>
+                    </small>
+                    <small> Holiday: 
+                        
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_CVA_HLS_VuviquityNoW.m3u8">ABR</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m1280x720H_7000.m3u8">7Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m1280x720H_4500_64HEv1.m3u8">4.5Mbps </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m1280x720H_3000_64HEv1.m3u8">3Mbps </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m960x540H_2200_64HEv1.m3u8">2.2Mbps</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m854x480M_1200_64HEv1.m3u8">1.2Mbps</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Holiday_The.HD.2.0EN2.0ES.16x9.Mezz.Progressive.CE-2404_m640x360M_600_64HEv1.m3u8">600Kbps</a>  
+                        <br>
+                    </small>
+                </h3>
+                <h3>Vubiquity 
+                    <small> matching mobile playlist: 
+                    
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_CVA_HLS_Vuviquity.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_CVA_HLS_Vuviquity.m3u8">300 </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_CVA_HLS_Vuviquity.m3u8">Taipei</a> 
+                         
+                        <br>
+                    </small>
+                </h3>           
+                <div>Composición: <br>          
+                    <small>
+                    - 4500H (720p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_4500_64HEv1.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_4500_64HEv1.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_4500_64HEv1.m3u8">Taipei</a>
+                          <br>
+                    </small>
+                    <small>
+                    - 2200H (540p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w960x540H_2200_64HEv1.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w960x540H_2200_64HEv1.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w960x540H_2200_64HEv1.m3u8">Taipei</a>
+                          <br>
+                    </small>
+                    <small>
+                    - 1200M (480p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w854x480M_1200_64HEv1.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w854x480M_1200_64HEv1.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w854x480M_1200_64HEv1.m3u8">Taipei</a>
+                         <br>
+                    </small>
+                    <small>
+                    - 600M (360p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360M_600_64HEv1.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360M_600_64HEv1.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360M_600_64HEv1.m3u8">Taipei</a> 
+                       <br>
+                    </small>                
+                </div>
+                <h3>mobile 
+                    <small> playlist: 
+                    
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_CVA_HLS_mobile_Baseline.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_CVA_HLS_mobile_Baseline.m3u8">300 </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_CVA_HLS_mobile_Baseline.m3u8">Taipei</a> <br>
+                    </small>
+                </h3>
+                <div>Composición: <br>          
+                    <small>
+                    - 4500 (720p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720B_4500.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_4500.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720B_4500.m3u8">Taipei</a>  <br>
+                    </small>
+                    <small>
+                    - 2500 (720p): 
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720B_2500.m3u8">Gravity</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_2500.m3u8">300</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720B_2500.m3u8">Taipei</a> <br>
+                    </small>
+                    
+                    <small>
+                    - 1500 (720p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720B_1500.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_1500.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720B_1500.m3u8">Taipei</a> <br>
+                    </small>
+                    
+                    <small>         
+                    - 400 (360p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_400.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_400.m3u8">300</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_400.m3u8">Taipei</a> <br>
+                    </small>
+                    <small>
+                    - 64 (audio):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_400.m3u8">Gravity</a> 
+                        / 300 [ <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_400_64LOW_audio.m3u8">LOW, </a> <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_400_64HE1_audio.m3u8">HEv1, </a> <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_400_64HE2_audio.m3u8">HEv2 </a> ]
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_400.m3u8">Taipei</a> <br> <br><br>
+                    </small>
+                </div>              
+            </div>
+            <div> 
+                <h3>smart TV  
+                    <small> playlist (con Reutilización): 
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_CVA_HLS_SmartTV-1.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_CVA_HLS_SmartTV-1.m3u8">300 </a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_CVA_HLS_SmartTV-1.m3u8">Taipei</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_CVA_HLS_SmartTV-1.m3u8">NatGeoHD</a> 
+                        <br>
+                    </small>
+                </h3>
+                <div>Composición: <br>
+                    
+                    <small>
+                    - <strong>Exclusivo!</strong> 6000 (720p):
+                        <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_6000.m3u8">Gravity</a> 
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_6000.m3u8">300</a>
+                        / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_6000.m3u8">Taipei</a>  <br>
+                    </small>
+                    
+                    <small>
+                        - <strong>Reutilización de perfiles mobile:</strong>  Reduce storage y tiempos de encodeo
+                    </small>
+                
+                </div>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        Pruebas de usabilidad: <br>
+            - Cuánto hay que esperar para que inicie la reproducción? <br>
+            - Se puede notar el cambio de segmento? <br>
+            - Cuánto tiempo tarda en reanudar cuando hago skipping? <br>
+            - Llega al bitrate máximo?<br>  
+            - Es aceptable la calidad a bitrate bajo? En general es uniforme? Alcanza las expectativas? <br>            
+    <br>
+    
+    Playlists de Resolución fija / bitrate adaptativo: <br>
+        <ul>
+        <li>1920x1080: 
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H.m3u8">Gravity</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H.m3u8">300</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H.m3u8">Taipei</a>
+        </li>
+        <li>1280x720
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H.m3u8">Gravity</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H.m3u8">300</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H.m3u8">Taipei</a>
+        </li>
+        <li>640x360 
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B.m3u8">Gravity</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B.m3u8">300</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B.m3u8">Taipei</a>
+        </li>
+        <li>400x224
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_CVA_HLS_400x224.m3u8">Gravity</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_CVA_HLS_400x224.m3u8">300</a>
+            - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_CVA_HLS_400x224.m3u8">Taipei</a>
+        </li>   
+    </ul>
+    <br><br><br><br>
+
+
+    <h4>Bitrate fijo -> Selección de la mejor resolución según BW:</h4> <br>
+                - Es mejor una resolución baja a bitrate alto o una resolución alta a bitrate bajo? Dónde está el límite para cada caso? 
+
+        <ul>
+            <li>400 
+                - (224p)
+                 <a href="">Gravity</a>
+                / <a href="">300</a>
+                / <a href="">Taipei</a>
+                - (360p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_400.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_400.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_400.m3u8">Taipei</a>
+            </li>
+            <li>500 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_500.m3u8">300</a>
+                / <a href="">Taipei</a>
+            </li>
+            <li>800 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_800.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_800.m3u8">300</a>
+                / <a href="">Taipei</a>
+            </li>
+            <li>1000 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_1000.m3u8">Gravity</a>
+                 / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_1000.m3u8">300</a>
+                - (360p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_1000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_1000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_1000.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w640x360B_1000.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w640x360B_1000.m3u8">Fox</a>
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_1000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_1000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_1000.m3u8">Taipei</a>
+            </li>
+            <li>1200 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_1200.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_1200.m3u8">300</a>
+                / <a href="">Taipei</a>
+            </li>
+            <li>1500 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_1500.m3u8">Gravity</a>
+                 / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_1500.m3u8">300</a>
+                - (360p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_1500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_1500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_1500.m3u8">Taipei</a>
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_1500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_1500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_1500.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1280x720H_1500.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1280x720H_1500.m3u8">Fox</a>
+            </li>
+            <li>1800 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_1800.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_1800.m3u8">300</a>
+                / <a href="">Taipei</a>
+            </li>
+            <li>2000 
+                - (224p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w400x224_2000.m3u8">Gravity</a>
+                 / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w400x224_2000.m3u8">300</a>
+                 - (360p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w640x360B_2000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w640x360B_2000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w640x360B_2000.m3u8">Taipei</a>
+                - (480p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w854x480_2000.m3u8">Gravity</a>
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_2000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_2000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_2000.m3u8">Taipei</a>
+            </li>
+            <li>2500 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_2500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_2500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_2500.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1280x720H_2500.m3u8">Crossinglines</a>      
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1280x720H_2500.m3u8">Fox</a>
+            </li>
+            <li>3000 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_3000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_3000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_3000.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1280x720H_3000.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1280x720H_3000.m3u8">Fox</a>
+            </li>
+            <li>3500 
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_3500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_3500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_3500.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1920x1080H_3500.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1920x1080H_3500.m3u8">Fox</a>
+            </li>
+            <li>4000 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_4000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_4000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_4000.m3u8">Taipei</a>
+            </li>
+            <li>4500 
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_4500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_4500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_4500.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1920x1080H_4500.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1920x1080H_4500.m3u8">Fox</a>
+            </li>
+            <li>5000 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_5000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_5000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_5000.m3u8">Taipei</a>
+            </li>
+            <li>6000 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_6000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_6000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_6000.m3u8">Taipei</a>
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_6000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_6000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_6000.m3u8">Taipei</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/CROSSINGLINES_2013_Featurette_BehindtheScenes_2997_1-3_Intro_REV_HD_Texted_Textless_08_02_2013_w1920x1080H_6000.m3u8">Crossinglines</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/FOXHD_w1920x1080H_6000.m3u8">Fox</a>
+                
+            </li>
+            <li>6500 
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_6500.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_6500.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_6500.m3u8">Taipei</a>
+            </li>
+            <li>7000 
+                - (720p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1280x720H_7000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720H_7000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1280x720H_7000.m3u8">Taipei</a>
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_7000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_7000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_7000.m3u8">Taipei</a>            
+            </li>
+            <li>8000 
+                - (1080p)
+                 <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_8000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_8000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_8000.m3u8">Taipei</a>
+            </li>
+            <li>9000 
+                - (1080p)
+                - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_w1920x1080H_9000.m3u8">Gravity</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1920x1080H_9000.m3u8">300</a>
+                / <a href="http://200.42.4.13:8080/segments/vod_smartTV/Taipei_w1920x1080H_9000.m3u8">Taipei</a>
+            </li>
+        </ul>
+    
+    <br><br><br><br>
+    <h4>Pruebas: Partículas y movimiento</h4>
+
+
+    Se crean playlists para evaluar la calidad comparando un chunk de interés la vez a resolución fija con bitrate alternante. Se secuencia para cada resolución dos chunks al mismo bitrate en forma creciente para facilitar la comparativa. Puede que no funcione en algunos players. Estas listas pueden generar errores de reproducción ya que presentan discontinuidades.<br><br>
+
+        <small>
+            <ul >
+                <li>1080: 3500, 4500, 6000, 6500, 7000, 8000, 9000Kbps: Gravity chunks[
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1920x1080H_9_8_7_65_6_45_35_Chunk3.m3u8">3</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1920x1080H_9_8_7_65_6_45_35_Chunk2.m3u8">2</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1920x1080H_9_8_7_65_6_45_35_Chunk13.m3u8">13</a>]<br>
+                     - 6000Kbps: "Aceptable". Las partículas son distinguibles.<br>
+                     - 7000Kbps: Se aprecian texturas en el traje del astronauta.<br>
+                     - 8000Kbps: Se adquiere sensación de profundidad. Mejora el rango dinámico.<br>
+                     - 9000Kbps: Se realza la sensación de profundidad.
+
+                </li><br>
+                <li>720: 1000, 1500, 2000, 2500, 3000, 4000, 5000, 6000, 7000Kbps: Gravity chunks[
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1280x720H_7_6_7_5_4_3_25_2_15_1_Chunk3.m3u8">3</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1280x720H_7_6_7_5_4_3_25_2_15_1_Chunk2.m3u8">2</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_1280x720H_7_6_7_5_4_3_25_2_15_1_Chunk13.m3u8">13</a>]<br>
+                     - 3000Kbps: "Aceptable". Las partículas son distinguibles.<br>
+                     - 4000Kbps: Se aprecian texturas en el traje del astronauta.<br>
+                     - 5000Kbps: Se adquiere sensación de profundidad. Mejora el rango dinámico.<br>
+                     - 6000Kbps: Se realza la sensación de profundidad.<br>
+                     - 7000Kbps: Se realza la sensación espacial.
+                </li><br>
+                
+                <li>360: 200, 300, 400, 500, 600, 1000, 1200, 1500, 2000Kbps: Gravity chunks[
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_640x360H_2_15_12_1_06_05_04_03_02_Chunk3.m3u8">3</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_640x360H_2_15_12_1_06_05_04_03_02_Chunk2.m3u8">2</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_640x360H_2_15_12_1_06_05_04_03_02_Chunk13.m3u8">13</a>]<br>
+                     - 1500Kbps: "Aceptable". Las partículas son distinguibles.<br>
+                     - 2000Kbps: Se aprecian texturas en el traje del astronauta.<br>
+                     - La calidad es bastante mala para el bitrate que demanda hasta 2000Kbps.<br>      
+                     - Crear perfiles de 2000Kbps a 5000Kbps<br>
+                </li><br>               
+                <li>224: 400, 500, 800, 1000, 1200, 1500, 1800, 2000Kbps: Gravity Chunks
+                     [ <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_400x224B_2_18_15_12_1_08_05_04_Chunk3.m3u8">3</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_400x224B_2_18_15_12_1_08_05_04_Chunk2.m3u8">2</a>
+                     - <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_400x224B_2_18_15_12_1_08_05_04_Chunk13.m3u8">13</a>]<br>
+                     En pantallas grandes (Mapping 224---> 1334 / 1920):<br>
+                     - 2000Kbps: Se aprecian texturas en el traje del astronauta.<br>
+                     En pantallas chicas (Mapping 224---> 750px):<br>
+                     - 800Kbps: "Aceptable". Las partículas son distinguibles.<br>
+                     - 1500Kbps: Se aprecian texturas, profundidad, no se obtiene mucha ganancia pasado este bitrate <br><br>
+                     
+                     !!! Review...
+
+                     Crear playlists con AnyRes concatenando videos de un chunk
+
+                     se puede hacer script? Si toma mucho tiempo directamente linkear chunk ts... comparacion manual pero por lo menos no deberia generar errores.. el problema es que no se puede reproducir en player de smart tv... pero m3u8 si...
+                </li><br>
+            </ul>
+        </small>
+
+    <h4>Pruebas: Baseline 720p</h4>
+
+
+    Se busca mejorar performance en dispositivos básicos mobile que presentan dificultades al cargar contenido con perfiles H264 High.<br><br>
+
+        <small>
+            <ul >
+                <li>720: 300 H264 Baseline [
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_1000.m3u8">1000, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_1500.m3u8">1500, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_2000.m3u8">2000, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_2500.m3u8">2500, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_3000.m3u8">3000, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_4000.m3u8">4000, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_4500.m3u8">4500, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_5000.m3u8">5000, </a>         
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_6500.m3u8">6500, </a>
+                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/300%20-%20Rise%20of%20an%20Empire%20-%20Trailer%202_w1280x720B_7000.m3u8">7000</a>]
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player1000B.html">Player HLS: 1000B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player1500B.html">/ 1500B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player2000B.html">/ 2000B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player2500B.html">/ 2500B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player3000B.html">/ 3000B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player4000B.html">/ 4000B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player4500B.html">/ 4500B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player5000B.html">/ 5000B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player6500B.html">/ 6500B</a>
+                    <a href="http://200.42.4.13:8080/segments/vod_smartTV/video/player7000B.html">/ 7000B</a>
+                     <br>
+                     - 2000Kbps: Aceptable en Xoom. El reproductor de chrome funciona mejor que el VLC. Es más fluido y parece manejar HLS de forma más robusta. Perfiles H264 High parecen exigir al procesador y presenta lag.<br>
+                </li><br>
+            </ul>
+        </small>
+
+
+    <br><br><br><br>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Pagination -->
+        <div class="row text-center">
+            <div class="col-lg-12">
+                <ul class="pagination">
+                    <li>
+                        <a href="#">&laquo;</a>
+                    </li>
+                    <li>
+                        <a href="index.html">1</a>
+                    </li>
+                    <li >
+                        <a href="page2.html">2</a>
+                    </li>
+<!--                       <li >
+                        <a href="#">3</a>
+                    </li>
+                  <li>
+                        <a href="#">4</a>
+                    </li>
+                    <li>
+                        <a href="#">5</a>
+                    </li> -->
+                    <li>
+                        <a href="#">&raquo;</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Pruebas ABR Octubre 2015 - <a href="mailto:mhiga@cablevision.com.ar?Subject=Consulta%20Pruebas%20ABR" target="_top">mhiga@cablevision.com.ar</a></p>
+                </div>
+            </div>
+            <!-- /.row -->
+        </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+</body>
+
+</html>
