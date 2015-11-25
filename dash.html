@@ -24,10 +24,10 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
      <!-- Angular Material CSS now available via Google CDN; version 0.11.2 used here -->
     <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/angular_material/0.11.2/angular-material.min.css">
-
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
 </head>
 
-<body class="dashbody">
+<body class="dashbody" onload="Dash.createAll()">
 
     <!-- Navigation -->
     <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
@@ -42,6 +42,7 @@
                 </button>
                 <a class="navbar-brand" href="#">VoD: Pruebas ABR</a>
             </div>
+
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
@@ -80,12 +81,20 @@
         </div>
         <!-- /.row -->
 
+
+        <div class="hero" style="margin-top: 100px; margin-bottom: 100px">
+            <video id="videoPlayer" controls="true" style="width: 100%"></video>
+            <!--"-->
+        </div>
+        
+
         <!-- Projects Row -->
         <div class="row">
             <div class="col-md-6 portfolio-item">
                 <a href="#">
                     <img class="img-responsive" src="images/Gravity.jpg" alt="">
                 </a>
+           
                 <h3>
                     <a href="http://200.42.4.13:8080/segments/vod_smartTV/Gravity%20-%202K%20Trailer_CVA_HLS_Vuviquity.m3u8">Gravity Trailer</a>
                 </h3>
@@ -146,15 +155,7 @@
                     <li class="active">
                         <a href="#">2</a>
                     </li>
-<!--                      <li>
-                        <a href="#">3</a>
-                    </li>
-                   <li>
-                        <a href="#">4</a>
-                    </li>
-                    <li>
-                        <a href="#">5</a>
-                    </li> -->
+
                     <li>
                         <a href="#">&raquo;</a>
                     </li>
@@ -178,6 +179,229 @@
     </div>
     <!-- /.container -->
 
+    <script>
+    (function(){ //autoplay
+      
+        //var url = "http://dash.edgesuite.net/envivio/Envivio-dash2/manifest.mpd";
+        var url = "http://dash.edgesuite.net/envivio/Envivio-dash2/manifest.mpd";
+        var context = new Dash.di.DashContext();
+        var player  = new MediaPlayer(context);
+        
+        player.startup();
+        player.attachView(document.querySelector("#videoPlayer"));
+        player.attachSource(url);
+
+      })();
+
+        var myFirebaseRef = new Firebase("https://cablevision.firebaseio.com/dash");
+
+        myFirebaseRef.set({
+            control: {
+                current: {
+                    vod_id: "",
+                    time: ""
+                },
+                next:{
+                    vod_id: "",
+                    time: ""
+                }
+            },
+            channel: {
+                HBO:{
+                    name: "HBO",
+                    country_id: "UK",
+                    logo: ""
+                },
+                FOX:{
+                    name: "FOX",
+                    country_id: "USA",
+                    logo: ""  
+                }
+            },
+            
+
+            live: {
+                event: {
+                    channel_id: "HBO",
+                    program_id: "Humans",
+                    episode_id: "Episode 1.1",
+                    season_id: "Season 1",
+                    start_date: "14 Jun. 2015",
+                    gmt_offset: "-3",
+                    runtime: "",
+                    transmssion_type: "OTT",
+                    alternate_title: "Humans",
+                    dialog: "",
+                    featured: "Gemma Chan, Tom Goodman-Hill, Pixie Davie"
+                },
+                program: {
+                    Humans: {
+                        main_title: "Humans",
+                        original_title: "Humans",
+                        long_argument: "",
+                        short_argument: "",
+                        year: 2015,
+                        parental_rating: "",
+                        parental_ratingtype: "",
+                        image: "",
+                        image_width: "",
+                        image_height: "",
+                        actors: "Gemma Chan, Tom Goodman-Hill, Pixie Davie",
+                        directors: "",
+                        country: "UK",
+                        genres: "Sci-fi",
+                        subgenres: "Distopia",
+                        category: ""
+                    }
+                },
+
+                season: {
+                    S1:{
+                        title: "The First Season",
+                        number: 1,
+                        program_id: "Humans"
+                    },
+                    S2:{
+                        title: "The Second Season",
+                        number: 2,
+                        program_id: "Humans"
+                    }
+                },
+                episode: {
+                    S1E1:{
+                        season_id: "Season 1",
+                        title: "Intro",
+                        number: 1,
+                        long_argument: "The Hawkins family acquire Anita, a Synth. But instead of making life easier for Laura it creates new tensions. Leo is on the run with his Synth, Max. Pete feels pushed aside by his wife's Synth and George won't part with his.",
+                        short_argument: "The Hawkins family acquire Anita, a Synth. But instead of making life easier for Laura it creates new tensions..."
+                    },
+                    S1E2:{
+                        season_id: "Season 1",
+                        title: "Intro",
+                        number: 1,
+                        long_argument: "The Hawkins family acquire Anita, a Synth. But instead of making life easier for Laura it creates new tensions. Leo is on the run with his Synth, Max. Pete feels pushed aside by his wife's Synth and George won't part with his.",
+                        short_argument: "The Hawkins family acquire Anita, a Synth. But instead of making life easier for Laura it creates new tensions..."
+                    }
+                },
+                lineup: {
+                    id: "",
+                    country_id: ""
+                },
+                lineupChannel: {
+                    lineup_id: "",
+                    channel_id: "",
+                    channel: "",
+                    short_name: "",
+                    name: ""
+                },              
+            },
+
+            vod: {
+                
+                RememberMe: {
+                    abr: {
+                        dash: "http://200.42.4.13:8080/segments/vod_smartTV/video/dash/sources/ODG_Remember_Me_HD_CL_H264_BrndIn/ODG_Remember_Me_HD_CL_H264_BrndIn.mpd",
+                        hls: ""
+                    },
+                    main_title: "Recuérdame",
+                    original_title: "Remember Me",
+                    long_argument: "A romantic drama centered on two new lovers: Tyler, whose parents have split in the wake of his brother's suicide, and Ally, who lives each day to the fullest since witnessing her mother's murder.",
+                    short_argument: "",
+                    year: 2010,
+                    rating: 7.2,
+                    parental_rating: "",
+                    parental_ratingtype: "",
+                    image: "http://ia.media-imdb.com/images/M/MV5BOTA4MTg1ODkwNF5BMl5BanBnXkFtZTcwMzE5ODAxMw@@._V1_SX214_AL_.jpg",
+                    image_width: "214px",
+                    image_height: "317px",
+                    actors: "Robert Pattinson, Emilie de Ravin, Caitlyn Rund",
+                    directors: "Allen Coulter",
+                    country: "USA",
+                    genres: "Drama",
+                    subgenres: "Romance",
+                    category: ""
+                },
+                Philomena: {
+                    abr: {
+                        dash: "http://200.42.4.13:8080/segments/vod_smartTV/video/dash/sources/ODG_Philomena_HD_CL_H264_BrndIn/ODG_Philomena_HD_CL_H264_BrndIn.mpd",
+                        hls: ""
+                    },
+                    main_title: "Philomena",
+                    original_title: "Philomena  ",
+                    long_argument: "A world-weary political journalist picks up the story of a woman's search for her son, who was taken away from her decades ago after she became pregnant and was forced to live in a convent.",
+                    short_argument: "",
+                    year: 2013,
+                    rating: 7.6,
+                    parental_rating: "",
+                    parental_ratingtype: "",
+                    image: "http://ia.media-imdb.com/images/M/MV5BMjA5ODgyNzcxMV5BMl5BanBnXkFtZTgwMzkzOTYzMDE@._V1_SX214_AL_.jpg",
+                    image_width: "214px",
+                    image_height: "317px",
+                    actors: " Judi Dench, Steve Coogan, Sophie Kennedy Clark",
+                    directors: "Stephen Frears",
+                    country: "USA",
+                    genres: "Drama",
+                    subgenres: "Biography",
+                    category: ""
+                }
+
+            },
+
+
+            country: {
+                UK:{
+                    name: "",
+                    iso_code: "",
+                    GMT: ""
+                },
+                USA:{
+                    name: "",
+                    iso_code: "",
+                    GMT: ""  
+                }
+            },
+            credit: {
+                id: "",
+                type: "",
+                name: "",
+                image: "",
+                image_width: "",
+                image_height: ""
+            },
+            genre: {
+                scifi: {
+                    name: "Sci-fi"
+                },
+                drama: {
+                    name: "Drama"
+                }
+            },
+            genreSubgenre: {
+                scifi: {
+                    subgenre: "Androids"
+                },
+                drama:{
+                    subgenre: "Romance"
+                }
+            },
+            subgenre: {
+                id: "",
+                name: ""
+            },
+            category: {
+                id: "",
+                name: ""
+            },
+            categoryGenre: {
+                category_id: "",
+                genre_id: ""
+            }
+        });
+        myFirebaseRef.child("location/city").on("value", function(snapshot) {
+          alert(snapshot.val());  // Alerts "San Francisco"
+        });
+        console.log('Hola');
+    </script>
     <!-- jQuery -->
     <script src="js/jquery.js"></script>
 
